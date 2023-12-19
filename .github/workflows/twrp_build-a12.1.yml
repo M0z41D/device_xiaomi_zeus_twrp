@@ -109,7 +109,7 @@ jobs:
         cd ${GITHUB_WORKSPACE}/workspace
         git config --global user.name "M0z41D"
         git config --global user.email "kompetet420@gmail.com"
-        repo init --depth=1 -u ${{ github.event.inputs.MANIFEST_URL }} -b ${{ github.event.inputs.LIBRARY_BRANCH }}
+        repo init -u ${{ github.event.inputs.MANIFEST_URL }} -b ${{ github.event.inputs.LIBRARY_BRANCH }}
 
     - name: Repo Sync
       run: |
